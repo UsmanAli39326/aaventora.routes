@@ -8,6 +8,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Hunza from "./pages/Hunza";
 import Booking from "./pages/Booking";
+import ThankYou from "./pages/ThankYou";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/hunza" element={<Hunza />} />
           <Route path="/booking" element={<Booking />} />
+          <Route path="/thank-you" element={<ThankYou />} />
         </Route>
       </Routes>
     </Router>

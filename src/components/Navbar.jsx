@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return (
-        <nav className="fixed w-full z-50 bg-gray-900 text-white">
+        <nav className="fixed w-full z-50 bg-gray-900 text-white fade-in">
             <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
                 {/* Logo */}
@@ -17,13 +17,12 @@ const Navbar = () => {
                         Home
                     </Link>
 
-                    {/* <li className="hover:text-gray-200 cursor-pointer">Home</li> */}
-                    <li className="hover:text-gray-200 cursor-pointer">Destinations</li>
+                    <Link to="/destinations">Destinations</Link>
                     <Link to="/experiences" className="hover:text-gray-200 transition">
                         Our Story
                     </Link>
 
-                    <li className="hover:text-gray-200 cursor-pointer">Travel Guides</li>
+                    <Link to="/travel-guides">Travel Guides</Link>
                     <li>
                     <Link to="/about" className="hover:text-gray-200 transition">
                         About Us

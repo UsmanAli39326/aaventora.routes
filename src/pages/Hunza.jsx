@@ -154,9 +154,15 @@ const Hunza = () => {
                         Book This Experience
                     </button>
 
-                    <button className="w-full border border-gray-900 text-gray-900 py-3 rounded-md hover:bg-gray-700 hover:text-white transition duration-300">
+                    <a
+                        href="https://wa.me/923001234567?text=Hello%20I%20would%20like%20to%20inquire%20about%20this%20trip."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-full block text-center bg-green-500 text-white py-3 rounded-md hover:bg-green-600 transition"
+                    >
                         Inquire Now
-                    </button>
+                    </a>
+
                 </div>
 
             </div>

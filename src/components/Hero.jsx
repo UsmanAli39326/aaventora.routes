@@ -6,7 +6,7 @@ const Hero = () => {
 
   return (
     <section
-      className="h-screen bg-cover bg-center relative bg-backcolor fade-in"
+      className="h-screen bg-cover bg-center relative bg-backcolor fade-in "
       style={{
         backgroundImage: "url('/images/hero.jpg')",
       }}

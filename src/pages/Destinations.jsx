@@ -9,37 +9,37 @@ const Destinations = () => {
       name: "Hunza Valley",
       desc: "Snow-capped peaks, turquoise lakes and rich culture.",
       img: "/images/hunza-valley.jpeg",
-      link: "/hunza",
+      link: "/checkout-hunza",
     },
     {
       name: "Skardu",
       desc: "Gateway to K2 and breathtaking alpine scenery.",
       img: "/images/skardu.jpeg",
-      link: "/hunza",
+      link: "/checkout-skardu",
     },
     {
       name: "Swat Valley",
       desc: "The Switzerland of Pakistan with lush valleys.",
       img: "/images/swat.jpeg",
-      link: "/hunza",
+      link: "/checkout-swat",
     },
     {
       name: "Fairy Meadows",
       desc: "Magical basecamp view of Nanga Parbat.",
       img: "/images/medows.jpeg",
-      link: "/hunza",
+      link: "/checkout-meadow",
     },
     {
       name: "Murree",
       desc: "Historic forts, food streets and Mughal heritage.",
       img: "/images/murree.jpeg",
-      link: "/hunza",
+      link: "/checkout-murree",
     },
     {
       name: "Kashmir",
       desc: "Stunning coastal beauty and scenic highways.",
       img: "/images/kashmir.jpeg",
-      link: "/hunza",
+      link: "/checkout-kashmir",
     },
   ];
 

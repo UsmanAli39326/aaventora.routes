@@ -371,18 +371,48 @@ const Home = () => {
       </section>
 
       {/* FINAL CTA */}
-      <section className="bg-gray-900 text-white py-20 text-center">
-        <h2 className="text-3xl font-bold mb-6">
-          Ready To Begin Your Journey?
-        </h2>
+      <section
+        className="relative bg-cover bg-center py-28"
+        style={{
+          backgroundImage: "url('/images/story1.jpeg')",
+        }}
+      >
 
-        <p className="max-w-3xl mx-auto text-gray-300 text-lg leading-relaxed">
-          Let us craft a personalized travel experience for you. From the
-          majestic peaks of the Karakoram to the serene valleys of Kashmir,
-          we ensure every journey is safe, comfortable, and unforgettable.
-          Start exploring Pakistan with confidence and discover memories
-          that will last a lifetime.
-        </p>
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/60"></div>
+
+        <div className="relative max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-10 text-white">
+
+          {/* LEFT CONTENT */}
+          <div className="max-w-2xl">
+
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+              Pack Your Bags and Book <br />
+              Your Dream Getaway
+            </h2>
+
+            <p className="text-gray-200 text-lg leading-relaxed">
+              Let us craft a personalized travel experience for you.
+              From the majestic peaks of the Karakoram to the serene
+              valleys of Kashmir, every journey is designed to be
+              safe, comfortable and unforgettable.
+            </p>
+
+          </div>
+
+
+          {/* RIGHT BUTTON */}
+          <div>
+            <button
+              onClick={() => navigate("/destinations")}
+              className="bg-primary text-white px-20 py-3 rounded-full text-lg font-semibold hover:scale-105 transition duration-300 shadow-lg"
+            >
+              Book Now
+            </button>
+          </div>
+
+        </div>
+
       </section>
 
 

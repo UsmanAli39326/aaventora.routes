@@ -1,66 +1,106 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import Logo from "./Logo";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
+    const location = useLocation();
+
+    // Reset mobile menu on route change
+    useEffect(() => {
+        setIsOpen(false);
+    }, [location]);
+
+    // Handle scroll for adaptive navbar
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 50) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
+    const menuVariants = {
+        closed: { opacity: 0, height: 0, transition: { duration: 0.3 } },
+        open: { opacity: 1, height: "auto", transition: { duration: 0.3 } }
+    };
+
+    const navLinks = [
+        { name: "Home", path: "/" },
+        { name: "Destinations", path: "/destinations" },
+        { name: "Our Story", path: "/experiences" },
+        { name: "Travel Guides", path: "/travel-guides" },
+        { name: "About Us", path: "/about" },
+    ];
 
     return (
-        <nav className="fixed w-full z-50 bg-gray-900 text-white shadow-md">
-            <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <nav 
+            className="fixed top-0 left-0 w-full z-50 transition-all duration-500 bg-white/80 backdrop-blur-md py-3 shadow-sm border-b border-gray-100"
+        >
+            <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
 
                 {/* Logo */}
-                <div className="font-bold text-lg">
-                    ⛰ TOURIST PAKISTAN
-                </div>
+                <Link to="/">
+                    <Logo scrolled={true} />
+                </Link>
 
                 {/* Desktop Links */}
-                <ul className="hidden md:flex gap-8 text-sm items-center">
-                    <Link to="/hunza" className="hover:text-gray-300 transition">
-                        Home
-                    </Link>
-                    <Link to="/destinations" className="hover:text-gray-300 transition">
-                        Destinations
-                    </Link>
-                    <Link to="/experiences" className="hover:text-gray-300 transition">
-                        Our Story
-                    </Link>
-                    <Link to="/travel-guides" className="hover:text-gray-300 transition">
-                        Travel Guides
-                    </Link>
-                    <Link to="/about" className="hover:text-gray-300 transition">
-                        About Us
-                    </Link>
+                <ul className="hidden md:flex gap-8 text-[13px] font-medium items-center transition-colors duration-500 text-text-main tracking-widest uppercase">
+                    {navLinks.map((link) => (
+                        <li key={link.path}>
+                            <Link 
+                                to={link.path} 
+                                className="hover:text-primary transition-colors relative group"
+                            >
+                                {link.name}
+                                <span className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full`}></span>
+                            </Link>
+                        </li>
+                    ))}
                 </ul>
 
                 {/* Mobile Menu Button */}
                 <div className="md:hidden">
-                    <button onClick={() => setIsOpen(!isOpen)}>
-                        {isOpen ? <X size={24} /> : <Menu size={24} />}
+                    <button 
+                        onClick={() => setIsOpen(!isOpen)}
+                        className="text-text-main"
+                    >
+                        {isOpen ? <X size={28} /> : <Menu size={28} />}
                     </button>
                 </div>
             </div>
 
             {/* Mobile Menu */}
-            {isOpen && (
-                <div className="md:hidden bg-gray-800 px-6 py-4 space-y-4 text-sm">
-                    <Link to="/hunza" onClick={() => setIsOpen(false)} className="block">
-                        Home
-                    </Link>
-                    <Link to="/destinations" onClick={() => setIsOpen(false)} className="block">
-                        Destinations
-                    </Link>
-                    <Link to="/experiences" onClick={() => setIsOpen(false)} className="block">
-                        Our Story
-                    </Link>
-                    <Link to="/travel-guides" onClick={() => setIsOpen(false)} className="block">
-                        Travel Guides
-                    </Link>
-                    <Link to="/about" onClick={() => setIsOpen(false)} className="block">
-                        About Us
-                    </Link>
-                </div>
-            )}
+            <AnimatePresence>
+                {isOpen && (
+                    <motion.div 
+                        className="md:hidden bg-white px-6 py-6 space-y-4 text-base font-medium shadow-xl overflow-hidden"
+                        variants={menuVariants}
+                        initial="closed"
+                        animate="open"
+                        exit="closed"
+                    >
+                        {navLinks.map((link) => (
+                            <Link 
+                                key={link.path}
+                                to={link.path} 
+                                onClick={() => setIsOpen(false)} 
+                                className="block text-text-main hover:text-primary transition-colors tracking-widest uppercase text-sm"
+                            >
+                                {link.name}
+                            </Link>
+                        ))}
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </nav>
     );
 };

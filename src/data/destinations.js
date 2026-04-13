@@ -1,0 +1,346 @@
+export const destinations = [
+  {
+    id: "hunza",
+    name: "Hunza Valley",
+    tagline: "The Land of Eternal Youth",
+    desc: "Snow-capped peaks, turquoise lakes and rich culture.",
+    location: "Gilgit Baltistan",
+    img: "/images/hunza-valley.jpeg",
+    price: "$1,200",
+    duration: "5 Days",
+    rating: 4.9,
+    reviews: "128 reviews",
+    tags: ["Culture", "Adventure"],
+    bestSeason: "Apr — Oct",
+    fullDesc:
+      "Experience the ultimate luxury in the heart of the Karakoram. Our 5-day premium tour of Hunza Valley offers breathtaking views of Rakaposhi, local heritage at Altit & Baltit forts, and serene boat rides on Attabad Lake.",
+    story:
+      "Nestled at 2,438 meters in the Karakoram Range, Hunza Valley has captivated explorers for centuries. Legend says its people live well past 100, nourished by apricot orchards and glacial waters. The valley's ancient watchtowers — Altit and Baltit forts — guard secrets of a civilization that thrived long before modern roads carved their way through impossible cliffs. Today, the Karakoram Highway threads through this paradise, offering travelers front-row seats to Rakaposhi's snow-draped summit and the surreal turquoise of Attabad Lake.",
+    highlights: [
+      {
+        icon: "🏰",
+        title: "Altit & Baltit Forts",
+        desc: "Walk through 700-year-old royal residences perched above the valley floor.",
+      },
+      {
+        icon: "🚤",
+        title: "Attabad Lake Boating",
+        desc: "Glide across impossibly turquoise waters born from a 2010 landslide.",
+      },
+      {
+        icon: "🏔️",
+        title: "Rakaposhi Viewpoint",
+        desc: "Witness the 7,788m giant from the iconic Eagle's Nest viewpoint.",
+      },
+      {
+        icon: "🍑",
+        title: "Apricot Harvest",
+        desc: "Visit during summer to taste the legendary Hunza apricots fresh from the tree.",
+      },
+    ],
+    gallery: [
+      "/images/attabad-lake.jpeg",
+      "/images/balti-fort.jpeg",
+      "/images/experience1.jpeg",
+    ],
+    itinerary: [
+      { day: 1, title: "Islamabad to Chilas", desc: "Scenic drive along the Karakoram Highway with a stop at Babusar Pass." },
+      { day: 2, title: "Chilas to Hunza", desc: "Arrive in Karimabad. Visit Baltit Fort and explore the local bazaar." },
+      { day: 3, title: "Attabad Lake & Eagle's Nest", desc: "Morning boat ride on Attabad Lake, afternoon sunset at Eagle's Nest." },
+      { day: 4, title: "Passu & Borith Lake", desc: "Cross the legendary Passu suspension bridge and visit Borith Lake." },
+      { day: 5, title: "Return Journey", desc: "Depart with memories of a lifetime, stopping at Rakaposhi viewpoint." },
+    ],
+    testimonial: {
+      quote: "Hunza changed the way I see the world. The kindness of the people, the impossible beauty — it's a place that stays with you forever.",
+      name: "Sarah Ahmed",
+      role: "Solo Explorer",
+      img: "/images/face.jpeg",
+    },
+  },
+  {
+    id: "skardu",
+    name: "Skardu",
+    tagline: "Gateway to the Giants",
+    desc: "Gateway to K2 and breathtaking alpine scenery.",
+    location: "Gilgit Baltistan",
+    img: "/images/skardu.jpeg",
+    price: "$1,100",
+    duration: "6 Days",
+    rating: 4.8,
+    reviews: "95 reviews",
+    tags: ["Alpine", "Glacial"],
+    bestSeason: "May — Sep",
+    fullDesc:
+      "Explore the ancient Cold Desert of Skardu, the Shangrila Resort, and the stunning Satpara Lake. This tour is perfect for alpine enthusiasts looking to touch the gateway of K2.",
+    story:
+      "Skardu sits at the confluence of the Indus and Shigar rivers, a dramatic crossroads of geology and culture. Once a waypoint on the ancient Silk Road, today it is the basecamp for K2 — the world's second-highest and most dangerous peak. But you don't need to be a mountaineer to fall in love with Skardu. The lunar landscape of the Cold Desert, the mirror-still waters of Shangrila's Lower Kachura Lake, and the ancient rock carvings near Manthal Buddha are stories etched in stone and water, waiting to be read.",
+    highlights: [
+      {
+        icon: "🏜️",
+        title: "Cold Desert",
+        desc: "A surreal high-altitude desert surrounded by snow-capped peaks.",
+      },
+      {
+        icon: "🏞️",
+        title: "Shangrila Resort",
+        desc: "The legendary 'Heaven on Earth' with its heart-shaped lake.",
+      },
+      {
+        icon: "🪨",
+        title: "Manthal Buddha Rock",
+        desc: "An ancient rock carving of Buddha dating back to the 8th century.",
+      },
+      {
+        icon: "⛰️",
+        title: "Deosai Plains",
+        desc: "The world's second-highest plateau — home to the Himalayan brown bear.",
+      },
+    ],
+    gallery: [
+      "https://images.unsplash.com/photo-1586076469612-560e6a4d4a40?w=800&q=80",
+      "/images/experience3.jpeg",
+      "/images/story3.jpeg",
+    ],
+    itinerary: [
+      { day: 1, title: "Fly to Skardu", desc: "Breathtaking 35-minute flight over the Karakoram range from Islamabad." },
+      { day: 2, title: "Shangrila & Satpara Lake", desc: "Explore the iconic Shangrila Resort and the pristine Satpara Lake." },
+      { day: 3, title: "Cold Desert & Skardu Fort", desc: "Morning dune walk in the Cold Desert, afternoon at the ancient Skardu Fort." },
+      { day: 4, title: "Deosai National Park", desc: "Full day expedition to the 'Land of Giants' — vast alpine meadows." },
+      { day: 5, title: "Shigar Fort & Upper Kachura", desc: "Visit the restored 17th-century Shigar Fort. Kayak on Upper Kachura Lake." },
+      { day: 6, title: "Return to Islamabad", desc: "Morning flight back with panoramic mountain views." },
+    ],
+    testimonial: {
+      quote: "The Cold Desert at sunset, surrounded by 7,000-meter peaks — no photograph can do it justice. Skardu is the discovery of a lifetime.",
+      name: "John Miller",
+      role: "Adventure Blogger",
+      img: "/images/face.jpeg",
+    },
+  },
+  {
+    id: "swat",
+    name: "Swat Valley",
+    tagline: "The Switzerland of Pakistan",
+    desc: "The Switzerland of Pakistan with lush valleys.",
+    location: "KPK Pakistan",
+    img: "/images/swat.jpeg",
+    price: "$900",
+    duration: "4 Days",
+    rating: 4.7,
+    reviews: "210 reviews",
+    tags: ["Nature", "Relaxation"],
+    bestSeason: "Mar — Nov",
+    fullDesc:
+      "Relax in the lush green valleys of Swat. Visit the historic white palace, Malam Jabba ski resort, and the serene Ushu Forest.",
+    story:
+      "Once the seat of Buddhist civilization, Swat Valley earned the title 'Switzerland of the East' from Queen Elizabeth II herself. The emerald Swat River carves through terraced rice paddies and pine forests, past the gleaming White Palace of the last Wali of Swat. In winter, Malam Jabba transforms into Pakistan's premier ski destination. In spring, the valley erupts in wildflowers as ancient monasteries whisper stories from a time when this was the heart of Gandhara civilization.",
+    highlights: [
+      {
+        icon: "🏛️",
+        title: "White Palace (Marghazar)",
+        desc: "The stunning Italian-marble summer palace of the last ruler of Swat.",
+      },
+      {
+        icon: "⛷️",
+        title: "Malam Jabba Ski Resort",
+        desc: "Pakistan's premier ski destination with modern lifts and equipment rental.",
+      },
+      {
+        icon: "🌲",
+        title: "Ushu Forest",
+        desc: "One of the most beautiful alpine forests in Asia, perfect for hiking.",
+      },
+      {
+        icon: "🏛️",
+        title: "Swat Museum",
+        desc: "Houses one of the finest collections of Gandhara Buddhist art in the world.",
+      },
+    ],
+    gallery: [
+      "https://images.unsplash.com/photo-1625125976063-320f43e72dbb?w=800&q=80",
+      "/images/experience2.jpeg",
+      "/images/story1.jpeg",
+    ],
+    itinerary: [
+      { day: 1, title: "Islamabad to Mingora", desc: "Drive through the scenic Malakand Pass into the heart of Swat." },
+      { day: 2, title: "White Palace & Fizagat Park", desc: "Tour the royal White Palace and relax in Fizagat Park along the Swat River." },
+      { day: 3, title: "Malam Jabba & Ushu Forest", desc: "Morning at the ski resort, afternoon hike through the majestic Ushu Forest." },
+      { day: 4, title: "Swat Museum & Return", desc: "Explore Gandhara artifacts at the museum before the journey home." },
+    ],
+    testimonial: {
+      quote: "Swat is where history meets paradise. The White Palace, the forests, the river — it's an experience that nourishes the soul.",
+      name: "Sana Khan",
+      role: "Family Traveler",
+      img: "/images/face.jpeg",
+    },
+  },
+  {
+    id: "meadows",
+    name: "Fairy Meadows",
+    tagline: "Where the Earth Meets the Sky",
+    desc: "Magical basecamp view of Nanga Parbat.",
+    location: "Gilgit Baltistan",
+    img: "/images/medows.jpeg",
+    price: "$850",
+    duration: "3 Days",
+    rating: 5.0,
+    reviews: "340 reviews",
+    tags: ["Camping", "Hiking"],
+    bestSeason: "Jun — Sep",
+    fullDesc:
+      "A magical trek to the basecamp of Nanga Parbat. Experience the most spectacular views and starry nights in the world.",
+    story:
+      "At 3,300 meters, Fairy Meadows is a lush alpine grassland that offers the most dramatic front-row view of Nanga Parbat — the 'Killer Mountain' at 8,126 meters. The journey itself is an adventure: a white-knuckle jeep ride on one of the world's most dangerous roads, followed by a 5-kilometer trek through ancient pine forests. But when you emerge into the meadow and see Nanga Parbat's massive face glowing in the sunset, every step becomes worth it. At night, the Milky Way stretches overhead in a display so vivid it seems almost artificial.",
+    highlights: [
+      {
+        icon: "⛺",
+        title: "Alpine Camping",
+        desc: "Sleep under the stars with Nanga Parbat towering above you.",
+      },
+      {
+        icon: "🌌",
+        title: "Milky Way Viewing",
+        desc: "Zero light pollution creates some of the best stargazing on Earth.",
+      },
+      {
+        icon: "🥾",
+        title: "Beyal Camp Trek",
+        desc: "Trek to the basecamp for unobstructed views of Nanga Parbat's face.",
+      },
+      {
+        icon: "🌲",
+        title: "Ancient Pine Forests",
+        desc: "Walk through centuries-old pine and birch forests on the approach trek.",
+      },
+    ],
+    gallery: [
+      "https://images.unsplash.com/photo-1601224880664-39a2eb4b04be?w=800&q=80",
+      "/images/experience4.jpeg",
+      "/images/story2.jpeg",
+    ],
+    itinerary: [
+      { day: 1, title: "Islamabad to Raikot Bridge", desc: "Drive to Raikot Bridge. Thrilling jeep ride and 2-hour trek to Fairy Meadows." },
+      { day: 2, title: "Beyal Camp & Nanga Parbat", desc: "Full-day trek to Beyal Camp. Witness Nanga Parbat's north face up close." },
+      { day: 3, title: "Sunrise & Return", desc: "Wake for a golden sunrise over the mountain. Trek back and drive to Islamabad." },
+    ],
+    testimonial: {
+      quote: "I've traveled to 40 countries. Nothing — absolutely nothing — prepared me for the first moment I saw Nanga Parbat from Fairy Meadows.",
+      name: "Ali Raza",
+      role: "Mountaineering Enthusiast",
+      img: "/images/face.jpeg",
+    },
+  },
+  {
+    id: "murree",
+    name: "Murree Hills",
+    tagline: "A Colonial Hill Station Reimagined",
+    desc: "Historic forts, food streets and Mughal heritage.",
+    location: "Punjab Pakistan",
+    img: "/images/murree.jpeg",
+    price: "$600",
+    duration: "3 Days",
+    rating: 4.5,
+    reviews: "520 reviews",
+    tags: ["Historic", "Family"],
+    bestSeason: "Year Round",
+    fullDesc:
+      "A quick escape into the lush hills of Murree. Perfect for families looking for colonial architecture and modern food streets.",
+    story:
+      "Established by the British in 1851 as a summer retreat from the scorching Punjab plains, Murree retains much of its colonial charm — Christ Church on the hillside, the Gothic-style Holy Trinity Cathedral, and the winding Mall Road lined with Victorian-era buildings. But Murree has evolved into something more: a vibrant hill station where families gather in winter for snowfall, couples stroll through pine-scented trails, and food connoisseurs explore the famous Mall Road's culinary offerings. At Pindi Point, on clear days, you can see all the way to Islamabad glittering in the valley below.",
+    highlights: [
+      {
+        icon: "⛪",
+        title: "Colonial Architecture",
+        desc: "Explore the Victorian churches and British-era buildings along Mall Road.",
+      },
+      {
+        icon: "🍖",
+        title: "Mall Road Food Street",
+        desc: "Savor renowned Kashmiri chai, chapli kebabs, and local street food.",
+      },
+      {
+        icon: "❄️",
+        title: "Winter Snow",
+        desc: "Experience magical snowfall from December to February.",
+      },
+      {
+        icon: "🌄",
+        title: "Pindi Point Chair Lift",
+        desc: "Ride the chair lift for panoramic views of the Himalayan foothills.",
+      },
+    ],
+    gallery: [
+      "https://images.unsplash.com/photo-1566837945700-30057527ade0?w=800&q=80",
+      "/images/experience5.jpeg",
+      "/images/story1.jpeg",
+    ],
+    itinerary: [
+      { day: 1, title: "Islamabad to Murree", desc: "1.5-hour scenic drive. Check in and explore Mall Road in the evening." },
+      { day: 2, title: "Pindi Point & Nathia Gali", desc: "Chair lift at Pindi Point. Drive to Nathia Gali for forest hiking." },
+      { day: 3, title: "Bhurban & Return", desc: "Visit the luxurious Bhurban area, pine forest walk, then return to Islamabad." },
+    ],
+    testimonial: {
+      quote: "Murree is the perfect weekend escape. The kids loved the snow, and Mall Road's food was incredible. Simple yet magical.",
+      name: "Fatima Noor",
+      role: "Family Blogger",
+      img: "/images/face.jpeg",
+    },
+  },
+  {
+    id: "kashmir",
+    name: "Neelum Valley",
+    tagline: "Heaven on Earth",
+    desc: "Stunning coastal beauty and scenic highlands.",
+    location: "Azad Kashmir",
+    img: "/images/kashmir.jpeg",
+    price: "$950",
+    duration: "5 Days",
+    rating: 4.9,
+    reviews: "180 reviews",
+    tags: ["Highlands", "Rivers"],
+    bestSeason: "Apr — Oct",
+    fullDesc:
+      "The heaven on earth. Explore the Neelum River, Arang Kel, and the pristine landscapes of Azad Kashmir.",
+    story:
+      "The Neelum River gives this valley its name — a 200-kilometer emerald serpent winding through dense forests, terraced villages, and waterfalls that cascade from impossible heights. At its heart lies Arang Kel, a tiny village accessible only by a cable car ride over a deep gorge, where wooden houses perch on terraced hillsides like something from a Miyazaki film. The valley is a living canvas that changes with every season: spring brings cherry blossoms, summer turns everything a vivid green, autumn paints the forests gold, and winter drapes everything in silence and snow.",
+    highlights: [
+      {
+        icon: "🚡",
+        title: "Arang Kel Cable Car",
+        desc: "A thrilling cable car crossing over a deep gorge to reach a hilltop village.",
+      },
+      {
+        icon: "💧",
+        title: "Dhani Waterfall",
+        desc: "A towering waterfall hidden deep in the forest, accessible by a short trek.",
+      },
+      {
+        icon: "🏘️",
+        title: "Sharda Fort & University",
+        desc: "Ruins of an ancient Hindu temple and center of learning from the 4th century.",
+      },
+      {
+        icon: "🌸",
+        title: "Cherry Blossom Season",
+        desc: "Visit in spring when the entire valley blooms in pink and white.",
+      },
+    ],
+    gallery: [
+      "https://images.unsplash.com/photo-1568454537842-d933259bb258?w=800&q=80",
+      "/images/experience6.jpeg",
+      "/images/story3.jpeg",
+    ],
+    itinerary: [
+      { day: 1, title: "Islamabad to Muzaffarabad", desc: "Drive to the capital of Azad Kashmir. Explore the Red Fort." },
+      { day: 2, title: "Neelum Valley Entry", desc: "Drive along the Neelum River to Keran, with stops at scenic viewpoints." },
+      { day: 3, title: "Arang Kel & Sharda", desc: "Cable car to Arang Kel. Afternoon visit to the ancient Sharda ruins." },
+      { day: 4, title: "Ratti Gali Lake Trek", desc: "Full-day trek to the stunning alpine Ratti Gali Lake at 3,700 meters." },
+      { day: 5, title: "Return Journey", desc: "Scenic drive back through the valley to Islamabad." },
+    ],
+    testimonial: {
+      quote: "Neelum Valley is the most underrated destination in the world. Arang Kel made me feel like I was floating above the clouds.",
+      name: "Hassan Raza",
+      role: "Landscape Photographer",
+      img: "/images/face.jpeg",
+    },
+  },
+];

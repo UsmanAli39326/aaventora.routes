@@ -6,27 +6,14 @@ import Logo from "./Logo";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const [scrolled, setScrolled] = useState(false);
     const location = useLocation();
+
 
     // Reset mobile menu on route change
     useEffect(() => {
         setIsOpen(false);
     }, [location]);
 
-    // Handle scroll for adaptive navbar
-    useEffect(() => {
-        const handleScroll = () => {
-            if (window.scrollY > 50) {
-                setScrolled(true);
-            } else {
-                setScrolled(false);
-            }
-        };
-
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
 
     const menuVariants = {
         closed: { opacity: 0, height: 0, transition: { duration: 0.3 } },

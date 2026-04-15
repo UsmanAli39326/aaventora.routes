@@ -134,7 +134,7 @@ const Hunza = () => {
             className="text-text-muted text-lg mb-10 leading-relaxed font-light"
             variants={slideUp}
           >
-            Tourist Pakistan was founded with a passion for exploring
+            Aaventora Routes was founded with a passion for exploring
             the breathtaking landscapes of the north. From the peaks of
             the Karakoram to the vibrant cultures of hidden valleys,
             we design journeys that connect travelers with authentic

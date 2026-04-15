@@ -29,20 +29,20 @@ module.exports = {
       },
       colors: {
         primary: {
-          DEFAULT: "#1E40AF", // Deep Blue
-          light: "#3B82F6",
-          dark: "#1E3A8A",
+          DEFAULT: "#1A5C5C", // Deep Teal
+          light: "#2A7A7A",
+          dark: "#134646",
         },
         accent: {
-          DEFAULT: "#F97316", // Amber/Orange
-          light: "#FB923C",
-          dark: "#EA580C",
+          DEFAULT: "#C4956A", // Copper/Bronze
+          light: "#D4AC85",
+          dark: "#A87B52",
         },
-        surface: "#FFFFFF",
-        background: "#F8FAFC",
+        surface: "#FDFBF8",
+        background: "#F5F2EE", // Warm Cream
         text: {
-          main: "#0F172A", // Navy Charcoal
-          muted: "#64748B", // Slate
+          main: "#0E3B3B", // Dark Teal
+          muted: "#5F7A7A", // Muted Teal
         },
       },
     },

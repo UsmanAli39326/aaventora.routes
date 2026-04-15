@@ -109,7 +109,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t border-white/10 pt-10 flex flex-col md:flex-row justify-between items-center text-[10px] tracking-[0.2em] uppercase font-bold text-gray-500">
 
-          <p>© 2026 Tourist Pakistan. Powered by <a href="http://www.devtechnoz.com" target="_blank" rel="noopener noreferrer" className="text-accent hover:text-white transition-colors duration-300">devtechnoz</a></p>
+          <p>© 2026 Aaventora Routes. Powered by <a href="http://www.devtechnoz.com" target="_blank" rel="noopener noreferrer" className="text-accent hover:text-white transition-colors duration-300">devtechnoz</a></p>
 
           <div className="flex gap-10 mt-6 md:mt-0">
             <span className="hover:text-white cursor-pointer transition">Terms</span>

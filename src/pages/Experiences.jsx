@@ -103,7 +103,7 @@ const Experiences = () => {
                         variants={slideUp}
                     >
                         From a shared vision in 2015 to a movement that connects travelers
-                        and untamed paths, Tourist Pakistan was born to redefine travel.
+                        and untamed paths, Aaventora Routes was born to redefine travel.
                     </motion.p>
 
                     <motion.p 

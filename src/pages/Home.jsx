@@ -94,7 +94,7 @@ const Home = () => {
           </motion.h2>
 
           <motion.p className="text-body-lg text-text-muted mb-10" variants={slideUp}>
-            Tourist Pakistan was founded with a passion for exploring the world's most
+            Aaventora Routes was founded with a passion for exploring the world's most
             breathtaking landscapes. From the peaks of the Karakoram to vibrant
             cultures of hidden valleys, we design journeys that connect travelers
             with authentic, luxury experiences.

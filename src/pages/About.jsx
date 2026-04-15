@@ -40,7 +40,7 @@ const About = () => {
             className="text-white mb-6"
             variants={slideUp}
           >
-            About <span className="italic">Tourist Pakistan</span>
+            About <span className="italic">Aaventora Routes</span>
           </motion.h1>
           
           <motion.p 
